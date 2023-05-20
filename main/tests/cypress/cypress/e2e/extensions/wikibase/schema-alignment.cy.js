@@ -21,9 +21,9 @@ describe(__filename, function () {
 
 
     cy.get('#schema-alignment-entity-add-buttons').contains('Add item').click();
-    // cy.get(".schema-alignment-total-warning-count").should("be.visible").and("have.text", "3");
+    cy.get(".schema-alignment-total-warning-count").should("be.visible").and("have.text", "2");
 
     cy.get('#schema-alignment-entity-add-buttons').contains('Add item').click();
-    // cy.get(".schema-alignment-total-warning-count").should("be.visible").and("have.text", "4");
+    cy.get(".schema-alignment-total-warning-count").should("be.visible").and("have.text", "3");
   });
 });
